@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejics Tech</title>
+</head>
+<body>
+    <!-- First we have to create the Registration form -->
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="Formfill" onsubmit="return validation()">
+                <h2>Register</h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <box-icon name='user-voice' ></box-icon>
+                    <input type="text" name="username" placeholder="Username">
+
+                </div>
+                <div class="input-box">
+                    <box-icon type='solid' name='envelope'></box-icon>
+                    <input type="email" name="Email" placeholder="Email">
+
+                </div>
+                <div class="input-box">
+                    <box-icon name='lock-alt' ></box-icon>
+                    <input type="password" name="Password" placeholder="Password">
+
+                </div>
+                <div class="input-box">
+                    <box-icon name='lock-alt' ></box-icon>
+                    <input type="password" name="cPassword" placeholder="Confirm Password">
+
+                </div>
+                <div class="button">
+                    <input type="submit"  value="Register" class="btn" onclick="validation()" value="Register">
+                    <div class="group">
+                        <span><a href="#">Forget-password</a></span>
+                        <span><a href="#">Login</a></span>
+
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="popup" id="popup">
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<p align="center"><ion-icon name="checkmark-circle-outline"></ion-icon></p>
+        <h2><p align="center">Thank You!</p></h2>
+        <p align="center">You were Registered Successfully. <br>
+            Thanks!</p>
+        <p align="center"><a href="login.html"><button onclick="CloseSlide()">OK</button></a></p>
+    </div>
+    <!-- Second step will have to create a pupup value -->
+    <script src="form.js"></script>
+</body>
+</html>
